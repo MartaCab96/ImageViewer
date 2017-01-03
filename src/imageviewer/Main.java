@@ -9,7 +9,7 @@ import imageviewer.persistence.files.FileImageLoader;
 public class Main {
 
     public static void main(String[] args) {
-        ImageLoader imageLoader = new FileImageLoader("images");
+        ImageLoader imageLoader = new FileImageLoader("/Users/MartaCabrera/Pictures");
         MainFrame mainFrame = new MainFrame();
         mainFrame.add(new NextImageCommand(mainFrame.getImageDisplay()));
         mainFrame.add(new PrevImageCommand(mainFrame.getImageDisplay()));
